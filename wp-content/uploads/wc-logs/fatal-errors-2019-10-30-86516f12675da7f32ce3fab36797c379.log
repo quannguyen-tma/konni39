@@ -1,0 +1,14 @@
+2019-10-30T13:57:37+00:00 CRITICAL Cannot redeclare wc_get_gallery_image_html() (previously declared in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/themes/konni39/functions.php:41) in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 1457
+
+2019-10-30T13:58:18+00:00 CRITICAL Cannot redeclare wc_get_gallery_image_html() (previously declared in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/themes/konni39/functions.php:41) in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 1457
+
+2019-10-30T13:58:28+00:00 CRITICAL Cannot redeclare wc_get_gallery_image_html() (previously declared in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/themes/konni39/functions.php:41) in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 1457
+
+2019-10-30T13:59:01+00:00 CRITICAL Cannot redeclare wc_get_gallery_image_html() (previously declared in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/themes/konni39/functions.php:41) in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 1457
+
+2019-10-30T13:59:18+00:00 CRITICAL Cannot redeclare wc_get_gallery_image_html() (previously declared in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/themes/konni39/functions.php:41) in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 1457
+
+2019-10-30T14:02:05+00:00 CRITICAL Cannot redeclare wc_get_gallery_image_html() (previously declared in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/themes/konni39/functions.php:41) in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 1457
+
+2019-10-30T14:02:16+00:00 CRITICAL Cannot redeclare wc_get_gallery_image_html() (previously declared in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/themes/konni39/functions.php:41) in /home2/hangn177/domains/hangnhatdonggia.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 1457
+

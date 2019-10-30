@@ -18,6 +18,9 @@
  * @package WordPress
  */
 
+define('WP_HOME','http://localhost/konni39');
+define('WP_SITEURL','http://localhost/konni39');
+
 // ** Thiết lập MySQL - Bạn có thể lấy các thông tin này từ host/server ** //
 /** Tên database MySQL */
 define( 'DB_NAME', 'konni39' );
@@ -77,7 +80,10 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
+ini_set('display_errors','Off');
+ini_set('error_reporting', E_ALL );
 define('WP_DEBUG', false);
+define('WP_DEBUG_DISPLAY', false);
 
 /* Đó là tất cả thiết lập, ngưng sửa từ phần này trở xuống. Chúc bạn viết blog vui vẻ. */
 
