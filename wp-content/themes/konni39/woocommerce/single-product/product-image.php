@@ -33,20 +33,41 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
 	'images',
 ) );
 ?>
-<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
-	<figure class="woocommerce-product-gallery__wrapper">
+	<div class="col-md-6">
+		<div>
 		<?php
+		// if ( $product->get_image_id() ) {
+		// 	$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
+		// } else {
+		// 	$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+		// 	$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+		// 	$html .= '</div>';
+		// }
+
+		// echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+
+		// do_action( 'woocommerce_product_thumbnails' );
 		if ( $product->get_image_id() ) {
-			$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
+			echo "<a class='thumbnails'> <img data-name='product_image' src='" . wp_get_attachment_url($post_thumbnail_id) . "' alt='' /></a>";
 		} else {
-			$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-			$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-			$html .= '</div>';
+			echo "<a class='thumbnails'> <img data-name='product_image' src='' alt='' /></a>";
 		}
-
-		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
-
-		do_action( 'woocommerce_product_thumbnails' );
 		?>
-	</figure>
-</div>
+		</div>
+		<div id="product-thumbnail" class="owl-carousel">
+			<?php 
+			$attachment_ids = $product->get_gallery_image_ids();
+			if(count($attachment_ids) > 0) {
+				foreach( $attachment_ids as $attachment_id ) {
+					?>
+					<div class="item">
+						<div class="image-additional">
+							<a class="thumbnail" href="<?php echo wp_get_attachment_url( $attachment_id )?>" data-fancybox="group1"> <img src="<?php echo wp_get_attachment_url( $attachment_id )?>" alt="" /></a>
+						</div>
+					</div>
+					<?php
+				}
+			}
+			?>
+		</div>
+	</div>

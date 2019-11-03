@@ -3,7 +3,7 @@
 		//dynamic_sidebar( 'sidebar-1' );
 	//endif; ?>
 <!--</div>-->
-		<div id="column-left" class="col-sm-4 col-md-4 col-lg-3 ">
+		<div id="column-left" class="col-sm-4 col-md-4 col-lg-3 hidden-xs">
             <div id="category-menu" class="navbar collapse mb_40 hidden-sm-down in" aria-expanded="true" style="" role="button">
                 <div class="nav-responsive">
                     <ul class="nav  main-navigation collapse in ">
